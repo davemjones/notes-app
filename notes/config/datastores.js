@@ -49,7 +49,8 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mongo',
-    url: 'mongodb+srv://notes-app-dev-acct:notes-app-dev-acct-no1nose@cluster0.cduyi.mongodb.net/notes?retryWrites=true&w=majority',
+    // url: 'mongodb://notes-app-dev-acct:notes-app-dev-acct-no1nose@cluster0.cduyi.mongodb.net/notes',
+    url: 'mongodb://notes-app-dev-acct:notes-app-dev-acct-no1nose@cluster0-shard-00-00.cduyi.mongodb.net:27017,cluster0-shard-00-01.cduyi.mongodb.net:27017,cluster0-shard-00-02.cduyi.mongodb.net:27017/notes?ssl=true&replicaSet=atlas-bquvqn-shard-0&authSource=admin&retryWrites=true&w=majority'
 
   },
 
